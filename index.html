@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="background">
+      <nav class="card">
+        <i class="bx bxl-postgresql user"></i>
+        <h2 class="title">Sign Up</h2>
+        <form id="form" method="post" action="/add">
+          <div class="login">
+            <p id="error"></p>
+
+            <div class="login__content">
+              <i class="bx bx-envelope"></i>
+              <label for="email">Email:</label>
+            </div>
+            <input
+              class="input__bar"
+              aria-label="Email"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              autocomplete="off"
+              required
+            />
+            <i class="bx bx-envelope test"></i>
+          </div>
+          <div class="login">
+            <div class="login__content">
+              <i class="bx bx-lock-alt"></i>
+              <label for="password">Password:</label>
+            </div>
+            <input
+              class="input__bar"
+              aria-label="Password"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="********"
+              autocomplete="off"
+              required
+            />
+            <i
+              id="password_visibility"
+              class="bx bx-low-vision test password_visibility"
+            ></i>
+          </div>
+
+          <div class="login">
+            <div class="login__content">
+              <i class="bx bx-lock-alt"></i>
+              <label for="rptpassword">Repeat Password:</label>
+            </div>
+            <input
+              class="input__bar"
+              aria-label="RptPassword"
+              type="password"
+              id="rptpassword"
+              name="rptpassword"
+              placeholder="********"
+              autocomplete="off"
+              required
+            />
+            <i
+              id="password_visibility2"
+              class="bx bx-low-vision test password_visibility"
+            ></i>
+          </div>
+        </form>
+        <button id="btn" class="btn">Sign Up</button>
+        <p id="pass"></p>
+        <p class="terms">
+          By registering you agree with <span class="span">Terms</span> and
+          <span class="span">Privacy</span>
+        </p>
+        <a href="#" class="sign">Sign-In</a>
+      </nav>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

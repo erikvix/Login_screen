@@ -1,0 +1,135 @@
+:root {
+  --main-color: #be123c;
+  --white: #ffffeb;
+  --black: #121316;
+}
+
+body {
+  background-color: var(--main-color);
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: var(--black);
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 0;
+  width: 30rem;
+  height: max-content;
+  background-color: var(--white);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 60px #be123c;
+}
+.background {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: var(--primary);
+}
+.user {
+  font-size: 6rem;
+  border-radius: 1rem;
+  color: var(--main-color);
+}
+
+.social__card p {
+  font-weight: 600;
+}
+.social__card i {
+  font-size: 1.5rem;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* margin-bottom: 1rem; */
+}
+.input__bar {
+  width: 25rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--black);
+  background-color: transparent;
+}
+.login button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--black);
+}
+.login__content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.login i {
+  font-size: 1.2rem;
+}
+.btn { margin-top: 1rem;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  width: 25rem;
+  border: 1px solid transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+ .title{
+  font-size: 2rem;
+ }
+.terms,
+.sign {
+  font-size: 0.8rem;
+}
+.span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.sign {
+  font-weight: 600;
+  transition: ease all 0.3s;
+}
+.sign:hover {
+  color: var(--main-color);
+}
+#error {
+  color: #d3102d;
+}
+#pass {
+  color: rgb(60, 179, 31);
+}
+.displaynone {
+  display: none;
+}
+.test{
+  position: relative;
+  top: -30px;
+  left: 370px;
+}
+.password_visibility{
+  cursor: pointer;
+  width: max-content;
+}
+h2{
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
