@@ -1,4 +1,14 @@
 <h1>Lista de posts</h1>
 
-{{email}}
-{{senha}}
+{{#each user}}
+    <h1>{{email}}</h1>
+    <p>{{senha}}</p>
+    <a href="/delete/{{id}}"><button>Delete</button></a>
+    <hr>
+{{/each}}
+
+<style>
+    *{
+        font-family: sans-serif;
+    }
+</style>
