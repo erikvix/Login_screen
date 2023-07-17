@@ -5,6 +5,10 @@ const { rmSync } = require('fs');
 const bodyParser = require('body-parser')
 const Post = require('./models/Post')
 
+//! css
+app.use(express.static('public'));
+
+
 //? engines // 
 app.engine('handlebars', handlebars.engine({defaultLayout: 'main',
 runtimeOptions: {
@@ -28,8 +32,8 @@ app.get("/", function(req, res){
 })
 app.post('/add', function(req, res){ 
     Post.create({
-        email: req.body.title,
-        senha: req.body.conteudo
+        email: req.body.email,
+        senha: req.body.senha
     }).then(function(){
         res.redirect('/result')
     }).catch(function(erro){
